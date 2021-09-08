@@ -12,8 +12,8 @@ export default function Section2(){
     </div>  
     <div className={styles.headshot_container}> 
        <img className={styles.headshot} src="/headphoto1.jpg"  alt="Raul Moya Photo"/>
-       <img className={styles.headshot} src="/headphoto.jpg"   alt="Raul Moya Photo"/>
        <img className={styles.headshot} src="/headphoto2.jpg"  alt="Raul Moya Photo"/>
+       <img className={styles.headshot} src="/headphoto.jpg"   alt="Raul Moya Photo"/>
     </div>
       
     <div className={styles.skillscontainer}>

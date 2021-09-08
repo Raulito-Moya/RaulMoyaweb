@@ -19,9 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false) 
    
-  useEffect(()=>{
-    console.log('cambio');
-  },[error])
+
 
  const [formValues, handleInputChange] = useForm()
  
@@ -78,6 +76,10 @@ export default function Home() {
         setTimeout(()=>{
           setSubmitted(false)
         },[4000])
+      }else{
+     
+         console.log(res.json());
+        console.log('bad response');
       }
     })
    }else{

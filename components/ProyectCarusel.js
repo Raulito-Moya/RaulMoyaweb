@@ -39,7 +39,7 @@ export const ProyectCarusel = ({proyect}) => {
         <hr/>
         <div className={styles.linkstoproyect}>
           
-         <a href={proyect.github} className={styles.linkgit}>
+         <a href={proyect.github} className={styles.linkgit} onClick={(e)=> {e.stopPropagation()}}>
           <img src="/github.png" alt="" className={styles.logogit}/>
           
          </a>

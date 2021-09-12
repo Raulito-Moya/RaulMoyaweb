@@ -12,10 +12,10 @@ export default function Section2(){
        
        <ul className={styles.hobies_list}>
        <h2>Hobbies:</h2>
-         <li>Swing🏊‍♀️</li>
-         <li>videogames🎮</li>
-         <li>workout🏋️‍♂️</li>
-         <li>movies🎬</li>
+         <li>Swin🏊‍♀️</li>
+         <li>Videogames🎮</li>
+         <li>Workout🏋️‍♂️</li>
+         <li>Movies🎬</li>
          
        </ul>
       

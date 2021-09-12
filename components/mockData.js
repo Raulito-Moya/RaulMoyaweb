@@ -43,7 +43,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
     description:"A Simple Web aplication you can manage the spotify api for search for artist and get the album music and singles music by artist ",
     technologies:["HTML5","CSS","ReactJS","NodeJS","ExpressJS"],
     link:"https://spotify-searching.herokuapp.com/  ",
-    github:"https://github.com/Raulito-Moya/ApiSpotify"
+    github:"https://github.com/Raulito-Moya/ApiSpotify-server"
   },
   proyect4:{
       title:"Journal App",
@@ -51,7 +51,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
       description:"In this Journal App you can save notes and any writing you like. I think it would be a good daily for you",
       technologies:["HTML5","CSS","ReactJS","Firebase","Cloudinary"],
       link:"https://react-app-cursos-f534a.web.app/",
-      github:"https://github.com/Raulito-Moya/Journal"
+      github:"https://github.com/Raulito-Moya/Journal-Notes-App"
   },
   proyect5:{
     title:"Gift App",
@@ -59,7 +59,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
     description:"If you like animated stickers I think this app will be for you, this app use a Giphy API endpoint where you can find any sticker that you want",
     technologies:["HTML5","SASS","ReactJS"],
     link:"https://giftapp-c3003.firebaseapp.com/",
-    github:"https://github.com/Raulito-Moya/Journal-Notes-App"
+    github:"https://github.com/Raulito-Moya/react-gifexpertapp"
   }
   
   

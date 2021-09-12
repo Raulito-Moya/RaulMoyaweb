@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import styles from '../styles/Home.module.css'
-import Image from 'next/image'
+
 
 
 
@@ -8,14 +8,14 @@ import Image from 'next/image'
 export default function Section1(){
     
    
-    let navref= useRef(null);
+    let navref = useRef(null);
     
    
       function toggleBotton(){
            
         navref.current.classList.toggle('show') 
         //navList.classList.toggle('show')
-        console.log(navref.current);
+        //console.log(navref.current);
       }
   
  
@@ -29,9 +29,9 @@ export default function Section1(){
              
          
             <ul className={styles.menu} ref={navref}>
-               <li><a href="#about_me">About me</a> </li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact-me">Contact</a> </li>
+               <li><a href="#about_me" className={styles.navlist}>About me</a> </li>
+               <li><a href="#projects" className={styles.navlist}>Projects</a></li>
+               <li><a href="#contact-me" className={styles.navlist}>Contact</a> </li>
             </ul>
            
                <button  type="button" className={styles.hamburger}  onClick={toggleBotton}>

@@ -30,7 +30,7 @@ export const ProyectCarusel = ({proyect}) => {
            <ul className={styles.tech_list}>
              {
                  proyect.technologies.map((item,key) => 
-                    (<li className={styles.list_item}>{item}</li>) 
+                    (<li className={styles.list_item} key={key}>{item}</li>) 
                  )
              }
          </ul>

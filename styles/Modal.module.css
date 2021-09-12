@@ -17,9 +17,11 @@
 .modal{
      background: black;
      width: 50%;
-     height: auto;
+     
      border-radius: 16px;
      padding: 0px;
+    
+     padding-bottom: 60px;
      z-index: 100;
      background-color: rgb(255, 244, 244);
      padding-left: 2.1em;

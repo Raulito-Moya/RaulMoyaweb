@@ -32,10 +32,10 @@ export default function Home() {
       email,
       message
     } 
-    console.log( data.name.length === 0);
-     console.log(data.name.length);
+   /* console.log( data.name.length === 0);
+     console.log(data.name.length);*/
      let badError = '' //this is for validate the form because here the state of error not change in the function
-    let regexpname = new RegExp(/^[A-Za-zñÑáÁéÉíÍóÓúÚÜü]+$/) 
+    let regexpname = new RegExp(/^[a-z ,.'-]+$/i) 
     let regexpemail = new RegExp(/^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/)
     if(!regexpname.test(name) ){
        setError('Please the name if necesary') 
@@ -114,9 +114,9 @@ export default function Home() {
         <h2>Contact Me:</h2>
         <p><strong>number: </strong>  (816) - 718 - 8927</p>
         <p><strong>email: </strong>  rauly7moya@gmail.com</p>
-        <form   className={styles.form}>
+        <form   className={styles.form} autoComplete="off">
           <label htmlFor="name">Name:</label>
-          <input type="input" name="name" placeholder="Your name" value={name} className={styles.input} onChange={(e)=>{setName(e.target.value)}} required/>
+          <input autoComplete="off" type="input" name="name"  placeholder="Your name" value={name} className={styles.input} onChange={(e)=>{setName(e.target.value)}}  required/>
           <label htmlFor="emal">Email:</label>
           <input type="email" name="email" placeholder="Your email" value={email} className={styles.input}  onChange={(e)=>{setEmail(e.target.value)}} required/>
           <textarea rows="" cols="" placeholder="Type here" value={message} className={styles.textarea} onChange={(e)=>{setMessage(e.target.value)}} required></textarea>

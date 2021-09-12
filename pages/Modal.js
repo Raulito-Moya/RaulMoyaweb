@@ -35,6 +35,7 @@ export default function Modal({show, onClose, children, title}){
 
   ) : null
 
+  
   if(isBrowser){
       return ReactDOM.createPortal(
           modalContent,

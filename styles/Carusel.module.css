@@ -1,0 +1,170 @@
+
+.carusel_container{
+    display: flex;
+    height: auto;
+   margin-bottom: 10px;
+ width: 100%;
+/*max-width: 200px;*/
+  
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+
+   
+  
+
+}
+
+
+
+
+
+
+.rest_content{
+  height: 200px;
+  overflow-y: scroll;
+  
+
+}
+
+@media only screen and (max-width: 3496px){
+
+    .carusel_container::-webkit-scrollbar{
+   
+      width: 7px;
+      height: 3px;
+    }
+    
+    .carusel_container::-webkit-scrollbar-thumb{
+     
+      background-color: #ef744b;
+      border-radius: 10px;
+      
+    }
+     
+    .carusel_container::-webkit-scrollbar-track{
+     
+      background-color:white;
+      border-radius: 10px;
+      
+    }
+    
+    .carusel_container::-webkit-validation-bubble-arrow{
+      background-color: aquamarine;
+    }
+  
+
+    .rest_content::-webkit-scrollbar{
+   
+        width: 7px;
+        height: 6px;
+      }
+      
+      .rest_content::-webkit-scrollbar-thumb{
+       
+        background-color: #ef744b;
+        border-radius: 10px;
+        
+      }
+       
+      .rest_content::-webkit-scrollbar-track{
+       
+        background-color:white;
+        border-radius: 10px;
+        
+      }
+      
+      .rest_content::-webkit-validation-bubble-arrow{
+        background-color: aquamarine;
+      }
+
+    
+  
+  }
+
+
+.image{
+    width: 100%;
+    
+    margin-top: 20px;
+    object-fit: cover;
+    scroll-snap-align: center;
+
+
+}
+
+.list_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.introList{
+    
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+.tech_list{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+   
+    align-self: flex-start;
+    margin-top: -10px;
+    margin-left: -40px;
+}
+
+.list_item{
+    font-size: 15px;
+}
+
+
+
+.text{
+    height: 50px;
+    font-weight: 300;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.linkstoproyect{
+   display: flex;
+   flex-direction: column;
+    align-content: space-between;
+   
+
+
+}
+
+.linkgit{
+  
+
+}
+
+.logogit{
+    width: 50px;
+    height: 50px;
+}
+
+.logogit:hover{
+    transform: scale(1.2);
+}
+
+.link{
+    width: 100%;
+    
+    color: black;
+    margin-top: 40px;
+  }
+  
+  
+  
+  .link:hover{
+    color: coral;
+    transform: scale(1.2);
+    cursor: pointer;
+  }

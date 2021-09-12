@@ -8,7 +8,17 @@ export default function Section2(){
   <section className={styles.sub_section} id="about_me">
     <div className={styles.information}>
        <h2>About Me</h2>
-       <p>Hello my name is Raul Moya. I m a software developer and I would like help you to build great things ....Cuando utilizas el margen y el área de relleno en porcentajes, el valor se calcula a partir del tamaño en línea del elemento, es decir, el ancho del elemento cuando se trabaja en un lenguaje horizontal. En nuestro ejemplo, todos los márgenes y el área de relleno son del 10% del ancho del elemento. Esto significa que puedes tener márgenes y relleno alrededor de la caja del mismo tamaño. Este es un hecho que vale la pena recordar si utilizas porcentajes de esta manera.</p>
+       <p>Hello my name is Raul Moya. I m a junior Full-Stack developer and I am very passionate about this world of web development, I like learning and continuous practice, so if you need me to work on another technology, I can learn it. Soo if you have a great idea I can help you to create it, do not hesitate to contact me below. </p>
+       
+       <ul className={styles.hobies_list}>
+       <h2>Hobbies:</h2>
+         <li>Swing🏊‍♀️</li>
+         <li>videogames🎮</li>
+         <li>workout🏋️‍♂️</li>
+         <li>movies🎬</li>
+         
+       </ul>
+      
     </div>  
     <div className={styles.headshot_container}> 
        <img className={styles.headshot} src="/headphoto1.jpg"  alt="Raul Moya Photo"/>
@@ -21,16 +31,21 @@ export default function Section2(){
   
       <div className={styles.skills}>
          
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/html5.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/css3.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/javascript.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/github.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/react.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/nodejs.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/mongodb.svg" alt=""/>
-          <Image className={styles.skill_icon} width={50} height={50} src="/skills/mysql.svg" alt=""/>
+          <img className={styles.skill_icon}  src="/skills/html5.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/css3.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/javascript.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/github.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/react.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/next-js.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/nodejs.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/jest.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/mongodb.svg" alt="skill_image"/>
+          <img className={styles.skill_icon}  src="/skills/mysql.svg" alt=""/>
+          
       </div>
+     
     </div>
+    
   </section>
  )
 

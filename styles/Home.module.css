@@ -249,14 +249,14 @@
 
   .headshot_container::-webkit-scrollbar{
  
-    width: 7px;
-    height: 6px;
+    width: 77px;
+    height: 10px;
   }
   
   .headshot_container::-webkit-scrollbar-thumb{
    
     background-color: #ef744b;
-    border-radius: 10px;
+    border-radius: 1px;
     
   }
    

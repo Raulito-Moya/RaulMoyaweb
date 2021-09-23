@@ -10,7 +10,7 @@ import { ProyectCarusel } from './ProyectCarusel'
 export default function Section3(){
     const [showModal, setShowModal] = useState(false)
     const [element,setElement] = useState('here element') 
-    
+  
 
 
     let project1 = useRef(null);
@@ -31,7 +31,7 @@ export default function Section3(){
            <ProyectCarusel proyect={mockData.proyect1}/>
         </div>
         <div ref={project2} className={styles.project_card}   onClick={()=> {setElement(project2)  ; setShowModal(true)} }>
-          <ProyectCarusel proyect={mockData.proyect2}/>
+          <ProyectCarusel  proyect={mockData.proyect2}/>
         </div>
         <div ref={project3} className={styles.project_card}   onClick={()=> {setElement(project3)  ; setShowModal(true)} }>
           <ProyectCarusel proyect={mockData.proyect3}/>

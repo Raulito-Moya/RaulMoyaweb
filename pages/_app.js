@@ -1,43 +1,43 @@
 import '../styles/globals.css'
 import Script from 'next/script'
 
-// Global site tag (gtag.js) - Google Analytics 
-//<script async src="https://www.googletagmanager.com/gtag/js?id=G-FK7XZ2NHH5"></script>
-//<script>
-//  window.dataLayer = window.dataLayer || [];
-//  function gtag(){dataLayer.push(arguments);}
-//  gtag('js', new Date());
-//
-//  gtag('config', 'G-FK7XZ2NHH5');
-//</script>
+
 
 
 function MyApp({ Component, pageProps }) {
-   
-  const code = process.env.ANALYTICS
+ 
   
+  const code = process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_ANALYTICS : process.env.NEXT_PUBLIC_ANALYTICS
+
   return ( 
    <>
-  <Script
-   id="my-script"
-   strategy='lazyOnload'
-   src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
-  />
-  <Script
-  id="my-script"
-  strategy='lazyOnload' >
-    {
-      `
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+  { process.env.NODE_ENV === 'production' && (
+  
+  
+  <>
+     <Script
+     id="my-script"
+     strategy='lazyOnload'
+     src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
+    />
+    <Script
+     id="my-script2"
+     strategy='lazyOnload' >
+      {
+        `
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
-     gtag('config', ${code});
-     ` 
-    }
- 
+       gtag('config','${code}');
+       ` 
+      }
     
-  </Script>
+      
+     </Script>
+   </>
+  )}
+ 
    
   <Component {...pageProps} />
   </>

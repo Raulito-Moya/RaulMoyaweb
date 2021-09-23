@@ -4,20 +4,19 @@ import github from '../public/github.png'
 
 export const ProyectCarusel = ({proyect}) => {
 
- // console.log(proyect);
-
+ 
  const handledeploy = (e)=>{
     e.stopPropagation()
      document.write('wait a moment, loading app in progress...')
    
- 
-
  }
+
+ 
 
  return(
      <>
         
-       <div className={styles.carusel_container}>
+       <div className={styles.carusel_container} >
            <img className={styles.image} src={proyect.images[0].src} alt="proyect_image"/>
            <img className={styles.image} src={proyect.images[1].src} alt="proyect_image"/>
            <img className={styles.image} src={proyect.images[2].src} alt="proyect_image"/>
@@ -30,7 +29,7 @@ export const ProyectCarusel = ({proyect}) => {
            <ul className={styles.tech_list}>
              {
                  proyect.technologies.map((item,key) => 
-                    (<li className={styles.list_item} key={key}>{item}</li>) 
+                    (<li className={styles.list_item} key={key} >{item}</li>) 
                  )
              }
          </ul>
@@ -39,7 +38,7 @@ export const ProyectCarusel = ({proyect}) => {
         <hr/>
         <div className={styles.linkstoproyect}>
           
-         <a href={proyect.github} className={styles.linkgit} onClick={(e)=> {e.stopPropagation()}}>
+         <a href={proyect.github} className={styles.linkgit} onClick={(e)=> { e.stopPropagation()}}>
           <img src="/github.png" alt="" className={styles.logogit}/>
           
          </a>

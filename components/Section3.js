@@ -17,7 +17,7 @@ export default function Section3(){
     let project2 = useRef(null);
     let project3 = useRef(null);
     let project4 = useRef(null);
-    let project5 = useRef(null);
+    let project5 = useRef(null)    ;
    // console.log(elementref.current);
 
      
@@ -25,7 +25,7 @@ export default function Section3(){
  return(
      <>
     <section className={styles.sub_section_alternative} id="projects">
-      <h2 className={styles.project_title}>Projects</h2>  
+      <h2 className={styles.project_intro}>Projects:</h2>  
       <div className={styles.project_container}>
         <div ref={project1} className={styles.project_card}  onClick={()=> {setElement(project1)  ; setShowModal(true)} }>
            <ProyectCarusel proyect={mockData.proyect1}/>
@@ -42,6 +42,7 @@ export default function Section3(){
         <div ref={project5} className={styles.project_card}   onClick={()=> {setElement(project5)  ; setShowModal(true)} }>
           <ProyectCarusel proyect={mockData.proyect5}/>
         </div>
+   
      </div>
 
   </section>

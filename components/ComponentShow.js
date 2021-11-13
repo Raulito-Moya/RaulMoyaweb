@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import styles from '../styles/Modal.module.css'
 
 export default function ComponentShow({component}){
-  console.log(component);   
+ // console.log(component);   
 
     let divref = useRef(null)
     

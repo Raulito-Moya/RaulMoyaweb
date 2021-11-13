@@ -27,12 +27,16 @@ export const ProyectCarusel = ({proyect}) => {
          <div className={styles.list_container}>
              <h3 className={styles.introList}>Technologies:</h3>
            <ul className={styles.tech_list}>
-             {
-                 proyect.technologies.map((item,key) => 
-                    (<li className={styles.list_item} key={key} >{item}</li>) 
-                 )
-             }
-         </ul>
+              {
+                  proyect.technologies.map((item,key) => 
+                     (
+                      <li className={styles.list_item} key={key} >
+                         {item}
+                       </li>
+                        ) 
+                  )
+              }
+            </ul>
         
         </div>
         <hr/>

@@ -10,7 +10,7 @@ let nodemailer = require('nodemailer')
      
     try {
         
-
+  
         const {name,email} = req.body
         console.log(req.body);
        
@@ -21,7 +21,7 @@ let nodemailer = require('nodemailer')
          host: "smtp.gmail.com",
          auth: {
            user: 'raulmoyaweb@gmail.com',
-           pass: 'RaulWeb1234',
+           pass: process.env.EMAIL_PASSWORD,
          },
          secure: true,
        })

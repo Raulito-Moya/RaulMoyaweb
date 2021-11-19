@@ -4,7 +4,7 @@ import github from '../public/github.png'
 
 export const ProyectCarusel = ({proyect}) => {
 
- 
+ //console.log(proyect);
  const handledeploy = (e)=>{
     e.stopPropagation()
      document.write('wait a moment, loading app in progress...')
@@ -17,9 +17,9 @@ export const ProyectCarusel = ({proyect}) => {
      <>
         
        <div className={styles.carusel_container} >
-           <img className={styles.image} src={proyect.images[0].src} alt="proyect_image"/>
-           <img className={styles.image} src={proyect.images[1].src} alt="proyect_image"/>
-           <img className={styles.image} src={proyect.images[2].src} alt="proyect_image"/>
+           <img className={styles.image} src={ proyect.images[0].src || proyect.images[0] } alt="proyect_image"/>
+           <img className={styles.image} src={proyect.images[1].src  || proyect.images[1]} alt="proyect_image"/>
+           <img className={styles.image} src={proyect.images[2].src  || proyect.images[2]} alt="proyect_image"/>
        </div>
        <div className={styles.rest_content}>
          <h2>{proyect.title}</h2>

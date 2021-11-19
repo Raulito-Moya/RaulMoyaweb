@@ -19,8 +19,11 @@ import gifts2 from '../public/proyects_images/gifts2.png'
 import gifts3 from '../public/proyects_images/gifts3.png'
 
 
+
+
+
  export const mockData = {
-  proyect1:{
+  project1:{
       title:"Healty Habits",
       images:[healtyhabits1,healtyhabits2,healtyhabits3 ],
       description:"This a community blog about nutrition habits, where you can become a member and upload your articles and posts on specific topics of healthy habits",
@@ -29,7 +32,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
       github:"https://github.com/Raulito-Moya/Healty-habits"
   },
  
- proyect2:{
+ project2:{
      title:"Calendar App",
      images:[Calendarapp1,Calendarapp2,calendarapp3],
      description:"A Calendar Application in where you can register events in a specific date",
@@ -37,7 +40,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
      link:"https://mearn-calendar-raul.herokuapp.com/ ",
      github:" https://github.com/Raulito-Moya/Calendar-Events-App"
  },
- proyect3:{
+ project3:{
     title:"SpotifySearch",
     images:[spotifysearch1,spotifysearch2,spotifysearch3],
     description:"A Simple Web aplication you can manage the spotify api for search for artist and get the album music and singles music by artist ",
@@ -45,7 +48,7 @@ import gifts3 from '../public/proyects_images/gifts3.png'
     link:"https://spotify-searching.herokuapp.com/  ",
     github:"https://github.com/Raulito-Moya/ApiSpotify-server"
   },
-  proyect4:{
+  project4:{
       title:"Journal App",
       images:[journal1,journal2,journal3],
       description:"In this Journal App you can save notes and any writing you like. I think it would be a good daily for you",
@@ -53,14 +56,27 @@ import gifts3 from '../public/proyects_images/gifts3.png'
       link:"https://react-app-cursos-f534a.web.app/",
       github:"https://github.com/Raulito-Moya/Journal-Notes-App"
   },
-  proyect5:{
+  project5:{
     title:"Gift App",
     images:[gifts1,gifts2,gifts3],
     description:"If you like animated stickers I think this app will be for you, this app use a Giphy API endpoint where you can find any sticker that you want",
     technologies:["HTML5","SASS","ReactJS"],
     link:"https://giftapp-c3003.firebaseapp.com/",
     github:"https://github.com/Raulito-Moya/react-gifexpertapp"
+  },
+  project6: {
+    title:"Uber-Clone",
+    images:[
+         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1637292833/uber-clone1_ou7rcl.png",
+         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1637293605/uber-clone3_olwk5t.png",
+         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1637293593/uber-clone2_d9ijca.png"
+        ],
+    description:"This app is a clone of the famous Uber app. I created this app with Next.js and mapbox API for get the maps. ",
+    technologies:["HTML5","TailwindCSS","NextJS","Firebase"],
+    link:"https://uber-clone-silk.vercel.app",
+    github:"https://github.com/Raulito-Moya/Uber-Clone"
   }
+
   
   
   

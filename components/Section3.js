@@ -33,7 +33,7 @@ export default function Section3(){
       }
   
        const observer = new IntersectionObserver(onChange, {
-         rootMargin: '1px'
+         rootMargin: '-100px'
        })
     
      observer.observe(elementref.current)

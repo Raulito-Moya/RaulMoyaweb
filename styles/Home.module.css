@@ -30,6 +30,17 @@
  
 }
 
+.navlist{
+  color: coral;
+  
+}
+
+.navlist:hover{
+  
+  color: #c25733;
+ 
+}
+
 .menu{
  
  
@@ -83,15 +94,30 @@
 
 .socials {
   display: flex;
-  flex-direction: column; /**/
-  padding-bottom: 200px; /**/
+  flex-direction: column; 
+  padding-bottom: 200px; 
 
 }
 
 .logo {
   height: 80px;
-  
+  animation: rotatelogo 5s ;
 }
+
+@keyframes rotatelogo {
+
+  from {
+  margin-left: 500px; 
+    transform: rotate(-200deg);
+  }
+
+  to {
+   margin-left: 0px;
+   
+  }
+}
+
+
 
 .logo:hover{
   transform: scale(1.2);
@@ -219,7 +245,22 @@
   padding-left: 5px;
   
   width: 50px;
+  animation: ShowSkill 3s;
 }
+@keyframes ShowSkill {
+
+  from {
+ 
+    transform: rotate(-200deg);
+    opacity: 0.4;
+  }
+
+  to {
+   
+   
+  }
+}
+
 
 .skill_icon:hover{
   transform: scale(1.1);
@@ -233,12 +274,25 @@
  
   max-width: 200px;
   
- 
   height: 300px;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  animation: ShowHeadshot 3s;
 
+}
+@keyframes ShowHeadshot {
+
+  from {
+ 
+   
+    opacity: 0.4;
+  }
+
+  to {
+   
+   
+  }
 }
 
 
@@ -467,7 +521,7 @@
     background-color: transparent;
     color: rgb(228, 147, 26);
     width: 5.5em;
-    
+   
      
    }
 

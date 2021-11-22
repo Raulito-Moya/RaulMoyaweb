@@ -1,7 +1,35 @@
+import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 
 export default function Section2(){
+  
+  
+  const [show,setShow] = useState(false)
+    const elementref =  useRef()  
+
+
+ 
+  useEffect(()=> {
+     
+    const onChange = (entries) => {
+     
+      const el = entries[0] 
+      //console.log(entries[0])
+      
+      if(el.isIntersecting){
+
+        setTimeout(()=>{setShow(true)},50) 
+      }
+    }
+
+     const observer = new IntersectionObserver(onChange, {
+       rootMargin: '1px'
+     })
+  
+   observer.observe(elementref.current)
+  })
+
 
 
  return(
@@ -22,27 +50,39 @@ export default function Section2(){
        </ul>
       
     </div>  
-    <div className={styles.headshot_container}> 
+  {show && (
+
+   <div className={styles.headshot_container}> 
        <img className={styles.headshot} src="/headphoto1.jpg"  alt="Raul Moya Photo"/>
        <img className={styles.headshot} src="/headphoto2.jpg"  alt="Raul Moya Photo"/>
        <img className={styles.headshot} src="/headphoto.jpg"   alt="Raul Moya Photo"/>
     </div>
+
+  )} 
       
     <div className={styles.skillscontainer}>
       <h2 className={styles.skillstitle}>Skills:</h2>
   
-      <div className={styles.skills}>
+      <div className={styles.skills} ref={elementref}>
+         {
+           show && (
+
+            <>
+            <img className={styles.skill_icon}  src="/skills/html5.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/css3.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/javascript.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/github.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/react.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/next-js.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/nodejs.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/jest.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/mongodb.svg" alt="skill_image"/>
+            <img className={styles.skill_icon}  src="/skills/mysql.svg" alt=""/>
+           </>
+
+           )
+         }
          
-          <img className={styles.skill_icon}  src="/skills/html5.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/css3.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/javascript.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/github.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/react.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/next-js.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/nodejs.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/jest.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/mongodb.svg" alt="skill_image"/>
-          <img className={styles.skill_icon}  src="/skills/mysql.svg" alt=""/>
           
       </div>
      

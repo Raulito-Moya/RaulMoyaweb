@@ -344,8 +344,7 @@
 /*section 3*/
 
 .sub_section_alternative{
-   display: flex;
-   flex-direction: column;
+
    
    text-align: center;
   
@@ -361,6 +360,18 @@
  font-size: 1.6em;
 }
 
+.project_kind_intro{
+  
+    text-align: left;
+    margin-left: 5%;
+   
+    color: rgb(224, 129, 20);
+    
+
+ 
+
+}
+
 .project_container{
   display: flex;
   flex-direction: row;
@@ -373,10 +384,13 @@
  padding-right: 1.2em;
 
  padding-top: 30px;
- padding-bottom: 200px;
+ padding-bottom: 50px;
  
+
   
 }
+
+
 
 .bottom{
   width: 100%;

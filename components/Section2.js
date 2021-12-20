@@ -1,37 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
+import { useIntersection } from '../hooks/useIntersection'
 import styles from '../styles/Home.module.css'
 
 
 export default function Section2(){
   
   
-  const [show,setShow] = useState(false)
     const elementref =  useRef()  
-
-
+    const [show] = useIntersection(elementref)
  
-  useEffect(()=> {
-     
-    const onChange = (entries) => {
-     
-      const el = entries[0] 
-      //console.log(entries[0])
-      
-      if(el.isIntersecting){
-
-        setTimeout(()=>{setShow(true)},50) 
-      }
-    }
-
-     const observer = new IntersectionObserver(onChange, {
-       rootMargin: '1px'
-     })
-  
-   observer.observe(elementref.current)
-  })
-
-
-
+ 
  return(
   <section className={styles.sub_section} id="about_me">
     <div className={styles.information}>

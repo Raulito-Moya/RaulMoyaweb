@@ -22,8 +22,8 @@ export default function Section3(){
     const [show] = useIntersection(elementref)
 
 
-   const mern  = [ mockData.project1,mockData.project2,mockData.project2,mockData.project3,mockData.project4,mockData.project5,mockData.project6 ]
-  
+   const mern  = mockData.reactProjects
+   
    
  return(
      <>
@@ -35,9 +35,9 @@ export default function Section3(){
         show ?
         
            <>
-            <ProjectSectionConteiner KindOfProjects="MERN" projects={mern} setElement={setElement} setShowModal={setShowModal}/>
-            
-         </>
+            <ProjectSectionConteiner KindOfProjects="React/Next/MERN:" projects={mern} setElement={setElement} setShowModal={setShowModal}/>
+            <ProjectSectionConteiner KindOfProjects="Angular/MEAN:" projects={mockData.angularProjects} setElement={setElement} setShowModal={setShowModal}/>
+           </>
             
            : <MyLoader/>
         

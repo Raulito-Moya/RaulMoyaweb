@@ -358,15 +358,16 @@
    
   margin-top: 80px;
  font-size: 1.6em;
+
 }
 
 .project_kind_intro{
   
     text-align: left;
     margin-left: 5%;
-   
+    font-size: 1.4em;
     color: rgb(224, 129, 20);
-    
+     font-family: 'Fuzzy Bubbles', cursive;
 
  
 

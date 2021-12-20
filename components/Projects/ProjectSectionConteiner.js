@@ -2,7 +2,7 @@ import styles from '../../styles/Home.module.css'
 import { Project } from './Project'
 
 export const ProjectSectionConteiner = ({KindOfProjects,projects,setElement,setShowModal}) => {
- 
+ console.log(projects);
 
     return( 
         <>

@@ -3,7 +3,7 @@
  import { mockData } from '../mockData'
  import { ProyectCarusel } from '../ProyectCarusel'
 
- export const Project = ({ /*project,*/setElement,setShowModal,projectName }) => {
+ export const Project = ({setElement,setShowModal,projectName }) => {
         
          //console.log(project);
      const project = useRef(null)

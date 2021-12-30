@@ -90,7 +90,7 @@ const angularProjects = [
             "https://res.cloudinary.com/dx33ki9ul/image/upload/v1640040828/Screenshot_8_hv6hda.png",
             "https://res.cloudinary.com/dx33ki9ul/image/upload/v1640040814/Screenshot_9_ycxema.png" 
          ],
-    description:"A super hero built app with Angular and Anuglar Material, if uou like comics and superheros this is an app for you",
+    description:"A super hero built app with Angular and Angular Material, if uou like comics and superheros this is an app for you",
     technologies:["Anuglar","Angular Material"],
     link:"",
     github:"https://github.com/Raulito-Moya/Heros-App-Angular"

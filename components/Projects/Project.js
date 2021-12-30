@@ -3,15 +3,16 @@
  import { mockData } from '../mockData'
  import { ProyectCarusel } from '../ProyectCarusel'
 
- export const Project = ({setElement,setShowModal,projectName }) => {
-        
+ export const Project = ({setElement,setShowModal,project }) => {
+      
+     
          //console.log(project);
-     const project = useRef(null)
+     //const project = useRef(null)
      let prop = mockData.project
 
     return(
-        <div ref={project}  className={styles.project_card}  onClick={()=> {setElement(project)  ; setShowModal(true)} }>
-          <ProyectCarusel proyect={projectName}/>
+        <div className={styles.project_card}  onClick={()=> {setElement(project)  ; setShowModal(true)} }>
+          <ProyectCarusel proyect={project}/>
         </div>
     )
 

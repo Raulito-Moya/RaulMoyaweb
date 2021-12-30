@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
+import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
 import { useIntersection } from '../hooks/useIntersection'
 import styles from '../styles/Home.module.css'
+import { HeadShots } from './HeadShots'
 
 
 export default function Section2(){
@@ -8,8 +10,9 @@ export default function Section2(){
   
     const elementref =  useRef()  
     const [show] = useIntersection(elementref)
- 
- 
+  
+   
+
  return(
   <section className={styles.sub_section} id="about_me">
     <div className={styles.information}>
@@ -30,11 +33,7 @@ export default function Section2(){
     </div>  
   {show && (
 
-   <div className={styles.headshot_container}> 
-       <img className={styles.headshot} src="/headphoto1.jpg"  alt="Raul Moya Photo"/>
-       <img className={styles.headshot} src="/headphoto2.jpg"  alt="Raul Moya Photo"/>
-       <img className={styles.headshot} src="/headphoto.jpg"   alt="Raul Moya Photo"/>
-    </div>
+   <HeadShots/>
 
   )} 
       

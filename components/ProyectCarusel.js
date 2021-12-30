@@ -1,9 +1,14 @@
 import styles from '../styles/Carusel.module.css'
 import github from '../public/github.png'
+import { useHorizontalScroll } from '../hooks/useHorizontalScroll'
+import { useEffect, useState } from 'react'
 
 
 export const ProyectCarusel = ({proyect}) => {
-
+  
+   
+   const scrollRef = useHorizontalScroll()
+  
  //console.log(proyect);
  const handledeploy = (e)=>{
     e.stopPropagation()
@@ -11,12 +16,12 @@ export const ProyectCarusel = ({proyect}) => {
    
  }
 
- 
+  useEffect(()=>{console.log('cambio');},[scrollRef])
 
  return(
      <>
         
-       <div className={styles.carusel_container} >
+       <div ref={scrollRef} className={styles.carusel_container} >
            <img className={styles.image} src={ proyect.images[0].src || proyect.images[0] } alt="proyect_image"/>
            <img className={styles.image} src={proyect.images[1].src  || proyect.images[1]} alt="proyect_image"/>
            <img className={styles.image} src={proyect.images[2].src  || proyect.images[2]} alt="proyect_image"/>

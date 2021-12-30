@@ -280,7 +280,13 @@
   scroll-snap-type: x mandatory;
   animation: ShowHeadshot 3s;
 
+
 }
+
+.headshot_container:hover{
+  cursor: pointer;
+}
+
 @keyframes ShowHeadshot {
 
   from {

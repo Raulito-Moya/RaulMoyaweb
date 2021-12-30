@@ -5,7 +5,6 @@ import Modal from '../pages/Modal'
 import { mockData } from './mockData'
 import { ProyectCarusel } from './ProyectCarusel'
 
-
 import MyLoader from './Loader'
 import { Project } from './Projects/Project'
 import { ProjectSectionConteiner } from './Projects/ProjectSectionConteiner'
@@ -16,13 +15,12 @@ import { useIntersection } from '../hooks/useIntersection'
 export default function Section3(){
     const [showModal, setShowModal] = useState(false)
     const [element,setElement] = useState('here element')
-    
+    console.log(element)
   
     const elementref =  useRef()  
     const [show] = useIntersection(elementref)
 
-
-   const mern  = mockData.reactProjects
+    const mern  = mockData.reactProjects
    
    
  return(
@@ -35,7 +33,7 @@ export default function Section3(){
         show ?
         
            <>
-            <ProjectSectionConteiner KindOfProjects="React/Next/MERN:" projects={mern} setElement={setElement} setShowModal={setShowModal}/>
+            <ProjectSectionConteiner KindOfProjects="React/MERN:" projects={mern} setElement={setElement} setShowModal={setShowModal}/>
             <ProjectSectionConteiner KindOfProjects="Angular/MEAN:" projects={mockData.angularProjects} setElement={setElement} setShowModal={setShowModal}/>
            </>
             
@@ -45,7 +43,7 @@ export default function Section3(){
  
   </section>
     
-  <Modal show={showModal} onClose={()=> setShowModal(false) }>
+  <Modal show={showModal} onClose={()=> setShowModal(false) } component={element}>
     <ComponentShow component={element}/>
   </Modal>
   </>

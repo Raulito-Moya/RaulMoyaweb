@@ -15,7 +15,9 @@
    
 }
 
-
+.carusel_container:hover{
+  cursor: pointer;
+}
 
 
 

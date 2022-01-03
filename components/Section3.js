@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import ComponentShow from './ComponentShow'
 import Modal from '../pages/Modal'
 import { mockData } from './mockData'
-import { ProyectCarusel } from './ProyectCarusel'
+import { ProyectCarusel } from './Projects/ProyectCarusel'
 
 import MyLoader from './Loader'
 import { Project } from './Projects/Project'
@@ -15,7 +15,7 @@ import { useIntersection } from '../hooks/useIntersection'
 export default function Section3(){
     const [showModal, setShowModal] = useState(false)
     const [element,setElement] = useState('here element')
-    console.log(element)
+ //  console.log(element)
   
     const elementref =  useRef()  
     const [show] = useIntersection(elementref)

@@ -3,12 +3,12 @@ import stylesModal from '../styles/Modal.module.css'
 import styles from '../styles/Carusel.module.css'
 import  ReactDOM  from "react-dom";
 import { useHorizontalScroll } from "../hooks/useHorizontalScroll";
-import { ProyectCarusel } from "../components/ProyectCarusel";
+import { ProyectCarusel } from "../components/Projects/ProyectCarusel";
 
 export default function Modal({show, onClose, children, title,component}){
 
  const [isBrowser, setisBrowser] = useState(false)
- console.log(children)
+// console.log(children)
  
  const scrollRef = useHorizontalScroll() 
 
@@ -36,8 +36,10 @@ export default function Modal({show, onClose, children, title,component}){
                 </a>
               
             </div>
-              
-        <ProyectCarusel proyect={component}/>
+          <div className={stylesModal.component}>
+          <ProyectCarusel proyect={component} isModal={3}/>
+          </div>    
+      
 
         </div>
       

@@ -34,8 +34,7 @@ export default function Home() {
       email,
       message
     } 
-   /* console.log( data.name.length === 0);
-     console.log(data.name.length);*/
+  
      let badError = '' //this is for validate the form because here the state of error not change in the function
     let regexpname = new RegExp(/^[a-z ,.'-]+$/i) 
     let regexpemail = new RegExp(/^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/)

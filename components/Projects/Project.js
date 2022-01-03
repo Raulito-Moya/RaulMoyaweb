@@ -1,7 +1,7 @@
  import React, { useRef } from 'react'
  import styles from '../../styles/Home.module.css'
  import { mockData } from '../mockData'
- import { ProyectCarusel } from '../ProyectCarusel'
+ import { ProyectCarusel } from './ProyectCarusel'
 
  export const Project = ({setElement,setShowModal,project }) => {
       

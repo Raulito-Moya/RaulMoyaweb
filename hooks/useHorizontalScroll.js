@@ -1,20 +1,33 @@
 import { useRef, useEffect } from "react";
 
-export function useHorizontalScroll(behaviorkind) {
+export function useHorizontalScroll(isModal) {
   const elRef = useRef();
 
   useEffect(() => {
     const el = elRef.current;
-    console.log(el);
+    // console.log(el);
     if (el) {
       const onWheel = e => {
-        console.log(e);
-        console.log(e.deltaY);
+       //console.log(e);
+       //console.log(e.scrollLeft);
+       //console.log(e.deltaY);
         if (e.deltaY == 0) return;
-        e.preventDefault();
-        el.scrollTo({
-          left: el.scrollLeft + e.deltaY,
-          behavior: behaviorkind || "auto"
+
+        if (
+          !(el.scrollLeft === 0 && e.deltaY < 0) &&
+          !(el.scrollWidth - el.clientWidth - Math.round(el.scrollLeft) === 0 && 
+              e.deltaY > 0)
+        ) {
+          e.preventDefault();
+        }
+
+        el.scrollTo( isModal ? {
+          
+          left: el.scrollLeft + e.deltaY * 3,
+          behavior:  "auto" 
+        }: {
+          left: el.scrollLeft + e.deltaY ,
+          behavior:  "smooth" 
         });
         
       };

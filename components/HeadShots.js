@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export const HeadShots = () => {
 
-    const scrollRef = useHorizontalScroll("smooth")
+    const scrollRef = useHorizontalScroll()
 
 
     return (

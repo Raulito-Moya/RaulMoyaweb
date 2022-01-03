@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useHorizontalScroll } from "../hooks/useHorizontalScroll";
 import styles from '../styles/Modal.module.css'
-import { ProyectCarusel } from "./ProyectCarusel";
+import { ProyectCarusel } from "./Projects/ProyectCarusel";
 
 export default function ComponentShow({component:proyect}){
  // console.log(component);   

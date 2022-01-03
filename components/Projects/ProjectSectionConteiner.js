@@ -10,11 +10,12 @@ export const ProjectSectionConteiner = ({KindOfProjects,projects,setElement,setS
         <div className={styles.project_container}> 
         
           {
-              projects.map(project => {
+              projects.map((project ,key) => {
                 
  
               return(  
-                   <Project project={project} 
+                   <Project key={key}
+                            project={project} 
                             setElement={setElement} 
                             setShowModal={setShowModal}/>
                   )

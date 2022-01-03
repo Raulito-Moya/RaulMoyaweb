@@ -482,6 +482,7 @@
   align-self: center;
   margin-bottom: 10px;
   border-radius: 5px;
+  padding-left: 10px;
 }
 
 .textarea{
@@ -489,6 +490,7 @@
   width: 50%;
   height: 200px;
   border-radius: 10px;
+  padding-left: 10px;
 }
 
 .sendbutton{

@@ -51,6 +51,7 @@ export default function Section2(){
             <img className={styles.skill_icon}  src="/skills/github.svg" alt="skill_image"/>
             <img className={styles.skill_icon}  src="/skills/react.svg" alt="skill_image"/>
             <img className={styles.skill_icon}  src="/skills/next-js.svg" alt="skill_image"/>
+            <img className={styles.skill_icon} src="/skills/angularjs.svg" alt="skill_image"/>
             <img className={styles.skill_icon}  src="/skills/nodejs.svg" alt="skill_image"/>
             <img className={styles.skill_icon}  src="/skills/jest.svg" alt="skill_image"/>
             <img className={styles.skill_icon}  src="/skills/mongodb.svg" alt="skill_image"/>

@@ -5,7 +5,7 @@ export function useHorizontalScroll(isModal) {
 
   useEffect(() => {
     const el = elRef.current;
-    // console.log(el);
+     //console.log(el);
     if (el) {
       const onWheel = e => {
        //console.log(e);
@@ -23,10 +23,10 @@ export function useHorizontalScroll(isModal) {
 
         el.scrollTo( isModal ? {
           
-          left: el.scrollLeft + e.deltaY * 3,
+          left: el.scrollLeft + e.deltaY * 4,
           behavior:  "auto" 
         }: {
-          left: el.scrollLeft + e.deltaY ,
+          left: el.scrollLeft + e.deltaY * 2,
           behavior:  "smooth" 
         });
         
@@ -36,6 +36,6 @@ export function useHorizontalScroll(isModal) {
 
       return () => el.removeEventListener("wheel", onWheel);
     }
-  }, []);
+  }, [elRef]);
   return elRef;
 }

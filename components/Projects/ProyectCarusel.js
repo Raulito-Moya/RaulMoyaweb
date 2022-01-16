@@ -8,7 +8,7 @@ export const ProyectCarusel = ({proyect,isModal}) => {
   
    
    const scrollRef = useHorizontalScroll(isModal)
-  
+ // console.log(scrollRef);
  //console.log(proyect);
  const handledeploy = (e)=>{
     e.stopPropagation()
@@ -16,28 +16,9 @@ export const ProyectCarusel = ({proyect,isModal}) => {
      window.open(proyect.link, "Diseño Web")
    
  }
-const el =  useRef()
 
- useEffect(() => {
- /* el.current.scrollTo({
-     
-    left: 100,
-    behavior:  "smooth"
-  })*/
- /* console.log(el);
- const onWheel = e => {
-  console.log(e);
-  console.log(e.deltaY);
-  if (e.deltaY == 0) return;
-  //e.preventDefault();
-  el.current.scrollTo({
-    
-    left: 100,
-    behavior:  "smooth"
-  });
-  console.log("se ejecuto");
- };*/
-}, []);
+
+
 
  return(
      <>

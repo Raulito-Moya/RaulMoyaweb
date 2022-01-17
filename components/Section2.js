@@ -16,13 +16,13 @@ export default function Section2(){
  return(
   <section className={styles.sub_section} id="about_me">
     <div className={styles.information}>
-       <h2>About Me:</h2>
+       <h2 className={styles.informationtitle}>About Me:</h2>
        <p className={styles.personal_information}>
          Hello my name is Raul Moya. I am a junior Full-Stack developer, and I am very passionate about this world of web development, I like learning and continuous practice, so if you need me to work on another technology, I can learn it. If you have a great idea I can help you to create it, do not hesitate to contact me below. 
        </p>
        
        <ul className={styles.hobies_list}>
-       <h2>Hobbies:</h2>
+       <h2 className={styles.hobbiestitle}>Hobbies:</h2>
          <li>Swin🏊‍♀️</li>
          <li>Videogames🎮</li>
          <li>Workout🏋️‍♂️</li>

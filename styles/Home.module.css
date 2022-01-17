@@ -205,6 +205,10 @@
  
 }
 
+.informationtitle{
+  font-size: 1.6em;
+}
+
 .personal_information{
   width: 80%;
   margin-left: auto;
@@ -221,6 +225,10 @@
   font-size: 20px;
   margin-left: -20px;
   margin-top: 50px;
+}
+
+.hobbiestitle{
+  font-size: 1.4em;
 }
 
 .skillscontainer{
@@ -494,10 +502,21 @@
 }
 
 .sendbutton{
-  margin-top: 10px;
-  width: 70px;
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;
   align-self: center;
   border-radius: 5px;
+  border-top-width: 4px;
+  border-left-width: 4px;
+  
+  
+}
+
+.sendbutton:hover{
+  
+  border-color: #ef744b;
+
 }
 
 @media only screen and (max-width: 400px){

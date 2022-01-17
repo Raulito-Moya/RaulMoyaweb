@@ -5,8 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   /*font-family: 'Fuzzy Bubbles', cursive;*/
- 
-  
+  overflow-x: hidden;
 
 }
 

@@ -54,7 +54,7 @@ export default function Home() {
 
   if(badError.length === 0 ){
     setLoading(true)
-    console.log('Sending')
+    //console.log('Sending')
 
     fetch('/api/contact', {
       method: 'POST',
@@ -64,7 +64,7 @@ export default function Home() {
       },
       body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response received')
+     // console.log('Response received')
       if (res.status === 200) {
         console.log('Response succeeded!')
         setSubmitted(true)
@@ -84,6 +84,7 @@ export default function Home() {
       }
     })
    }else{
+     
      console.log('mal');
    }
 

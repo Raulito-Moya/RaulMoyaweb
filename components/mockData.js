@@ -94,6 +94,19 @@ const angularProjects = [
     technologies:["Angular","Angular Material"],
     link:"https://heroangularapp.herokuapp.com",
     github:"https://github.com/Raulito-Moya/Heros-App-Angular"
+  },
+  {
+    title:"Maps Markers App",
+    images:[
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1642458818/mapangular1_oe3w3n.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1642458851/mapsanugular2_zup9yh.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1642458878/mapsangular3_ye6vqc.png"
+      
+    ],
+    description:"This app is a map with markers, you can add markers and delete them, you can also edit the marker and change the color of the marker",
+    technologies:["Angular","Angular Material","Google Maps API"],
+    link:"https://affectionate-hodgkin-848e8b.netlify.app/",
+    github:"https://github.com/Raulito-Moya/MarkersMap"
   }
 
 ]

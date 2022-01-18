@@ -17,6 +17,13 @@ export const ProyectCarusel = ({proyect,isModal}) => {
    
  }
 
+ const handlegit = (e)=>{
+  e.stopPropagation()
+  //  document.write('wait a moment, loading app in progress...')
+   window.open(proyect.github, "Diseño Web")
+ 
+}
+
 
 
 
@@ -49,7 +56,7 @@ export const ProyectCarusel = ({proyect,isModal}) => {
         <hr/>
         <div className={styles.linkstoproyect}>
           
-         <a href={proyect.github} className={styles.linkgit} onClick={(e)=> { e.stopPropagation()}}>
+         <a  className={styles.linkgit} onClick={handlegit}>
           <img src="/github.png" alt="" className={styles.logogit}/>
           
          </a>

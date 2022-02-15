@@ -291,7 +291,7 @@
   scroll-snap-type: x mandatory;
   animation: ShowHeadshot 3s;
 
-
+  scrollbar-color: #ef744b;
 }
 
 .headshot_container:hover{
@@ -328,12 +328,16 @@
 
 }
 
-@media only screen and (max-width: 1496px){
+@media only screen and (max-width: 3000px){
 
   .headshot_container::-webkit-scrollbar{
  
     width: 77px;
     height: 10px;
+    
+  
+    border-radius: 1px;
+    scrollbar-color: #ef744b;
   }
   
   .headshot_container::-webkit-scrollbar-thumb{
@@ -419,9 +423,10 @@
 .project_card {
   width: 20%;
   height: auto;
- 
+  border: none;
+  border-radius: 4px;
   align-self: flex-start;
-  border: 1px solid black;
+ 
   box-shadow: 5px 5px 20px rgb(146, 146, 145);
   animation: fadeIn 3s ;
   

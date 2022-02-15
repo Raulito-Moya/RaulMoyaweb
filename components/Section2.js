@@ -25,7 +25,7 @@ export default function Section2(){
   <section className={styles.sub_section} id="about_me">
     <div className={styles.information}>
     <FadeIn vars={{ x:[ -1000,-1000],y:[2000,2000] }} >
-       <h2  className={styles.informationtitle}>About Me:</h2>
+       <h2  className={styles.informationtitle}>About Me</h2>
 
        <p  className={styles.personal_information}>
          Hello my name is Raul Moya. I am a junior Full-Stack developer, and I am very passionate about this world of web development, I like learning and continuous practice, so if you need me to work on another technology, I can learn it. If you have a great idea I can help you to create it, do not hesitate to contact me below. 
@@ -35,7 +35,7 @@ export default function Section2(){
    
      <ul className={styles.hobies_list}>
      <FadeIn vars={{ x:[-100,-100] ,y:[-200,-200] }} >
-       <h2 className={styles.hobbiestitle}>Hobbies:</h2>
+       <h2 className={styles.hobbiestitle}>Hobbies</h2>
      </FadeIn>
      <FadeIn vars={{ x:[-1000,1000,-1000,1000], opacity:0.2 }} >
        <li>Swin🏊‍♀️</li>
@@ -54,7 +54,7 @@ export default function Section2(){
   )} 
       
     <div className={styles.skillscontainer}>
-      <h2 className={styles.skillstitle}>Skills:</h2>
+      <h2 className={styles.skillstitle}>Skills</h2>
   
       <div className={styles.skills} ref={elementref}>
          {

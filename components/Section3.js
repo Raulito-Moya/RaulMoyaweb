@@ -27,7 +27,7 @@ export default function Section3(){
      <>
     
     <section className={styles.sub_section_alternative} id="projects"  ref={elementref}>
-      <h2 className={styles.project_intro}>Projects:</h2>  
+      <h2 className={styles.project_intro}>Projects</h2>  
           
        {  
         show ?

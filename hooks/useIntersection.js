@@ -2,11 +2,11 @@ import { useState,useEffect, useRef } from "react"
 
 
 
-export const useIntersection =(elementref) => {
+export const useIntersection =(elementref,rootMargin) => {
   
     const [show,setShow] = useState(false)
 
-    
+    console.log(rootMargin)
    
     useEffect(()=> {
      
@@ -22,7 +22,7 @@ export const useIntersection =(elementref) => {
         }
     
          const observer = new IntersectionObserver(onChange, {
-           rootMargin: '-100px'
+           rootMargin: rootMargin|| '-100px'
          })
       
        observer.observe(elementref.current)

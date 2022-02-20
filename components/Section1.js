@@ -39,18 +39,12 @@ export default function Section1(){
 
   }
   
-  useEffect(() => {
-    //gsap.to(q(".Home_hero_author__n9TWn"), { y: -150,  stagger: 2.33,repeat: 1, repeatDelay: 1, yoyo: true,rotation: "+=360"  }); 
-    //gsap.to(q(".Home_hero_title__1I52o"), { x: +200,  stagger: 2.33,repeat: 1, repeatDelay: 1, yoyo: true,rotation: "-=360"  }); 
-    
-  /*  gsap.to(p(".lista"), {
-      x: 200,y:200,stagger: 2.33,repeat: 1, repeatDelay: 1,yoyo: true
-    });*/
+ /* useEffect(() => {
+  
 
-  },[boxRef]);
+  },[boxRef]);*/
 
-  console.log(listref);
-  console.log(AtitleRef);
+
       function toggleBotton(){
            
         navref.current.classList.toggle('show') 
@@ -58,6 +52,15 @@ export default function Section1(){
         //console.log(navref.current);
       }
   
+      const onEnter = ({ currentTarget }) => {
+        gsap.to(currentTarget, {  scale: 1.2 });
+      };
+      
+      const onLeave = ({ currentTarget }) => {
+        gsap.to(currentTarget, {  scale: 1 });
+      };
+       
+      
  
  return(
     
@@ -68,19 +71,19 @@ export default function Section1(){
         
              
        <AnimaBox edx={20} ref={boxRef} class1=".lista" objectprops={listProps}>
-            <ul  className={styles.menu} ref={navref}>
+            <ul  className={styles.menu}  ref={navref}>
                <li ref={listref}  className="lista"> <a  href="#about_me" className={styles.navlist}>About me</a> </li>
                <li ref={listref} className="lista"> <a  href="#projects" className={styles.navlist}>Projects</a> </li>
                <li ref={listref} className="lista"> <a  href="#contact-me" className={styles.navlist}>Contact</a> </li>
             </ul>
         </AnimaBox> 
-            <FadeIn vars={{ x: 100,y:200 }}>
+           
             
                <button  type="button" className={styles.hamburger}  onClick={toggleBotton}>
                 <svg aria-hidden="true"  focusable="false" data-prefix="fas" data-icon="hamburger" className="svg-inline--fa fa-hamburger fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 256H48a48 48 0 0 0 0 96h416a48 48 0 0 0 0-96zm16 128H32a16 16 0 0 0-16 16v16a64 64 0 0 0 64 64h352a64 64 0 0 0 64-64v-16a16 16 0 0 0-16-16zM58.64 224h394.72c34.57 0 54.62-43.9 34.82-75.88C448 83.2 359.55 32.1 256 32c-103.54.1-192 51.2-232.18 116.11C4 180.09 24.07 224 58.64 224zM384 112a16 16 0 1 1-16 16 16 16 0 0 1 16-16zM256 80a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm-128 32a16 16 0 1 1-16 16 16 16 0 0 1 16-16z"></path></svg>
               </button>
               
-            </FadeIn>
+         
               
              
          

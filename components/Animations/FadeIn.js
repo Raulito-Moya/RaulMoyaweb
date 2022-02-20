@@ -26,7 +26,7 @@ import { useIntersection } from "../../hooks/useIntersection";
     
    
 
-   //console.log(el.current?.children);
+  
     useLayoutEffect(() => {  
         if(show === true){
      
@@ -56,10 +56,3 @@ import { useIntersection } from "../../hooks/useIntersection";
     ) 
   }
     
- /* function App() {      
-    return (
-      <FadeIn vars={{ x: 100 }}>
-        <div className="box">Box</div>
-      </FadeIn>
-    );
-  }*/

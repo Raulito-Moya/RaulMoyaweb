@@ -11,12 +11,13 @@
 }
 
 .hero_nav{ 
+  
   position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+
   
 }
 
@@ -44,6 +45,7 @@
 .menu{
  
  justify-self: end;
+ 
 
 }
 
@@ -60,7 +62,7 @@
 .hero_text {
   margin-left: 60px ;
   margin-bottom: 150px;
-  
+ 
 
 }
 
@@ -100,6 +102,7 @@
 }
 
 .logo {
+  position: relative;
   height: 80px;
   animation: rotatelogo 5s ;
 }
@@ -107,12 +110,12 @@
 @keyframes rotatelogo {
 
   from {
-  margin-left: 500px; 
+  left: 500px; 
     transform: rotate(-200deg);
   }
 
   to {
-   margin-left: 0px;
+   left: 0px;
    
   }
 }
@@ -138,13 +141,24 @@
     font-size:40px ;
     display: flex;
     flex-direction: column;
+    
   }
 
 
     .hero_area{
       display: flex;
       flex-direction: column; 
-     
+      
+    }
+   
+
+    .hero_author{
+      font-size: 40px;
+  
+    }
+    
+    .hero_title{
+      font-size: 20px;
     }
 
 
@@ -427,7 +441,7 @@
   border-radius: 4px;
   align-self: flex-start;
  
-  box-shadow: 5px 5px 20px rgb(146, 146, 145);
+  box-shadow: 5px 5px 20px rgb(145, 146, 145);
   animation: fadeIn 3s ;
   
 }

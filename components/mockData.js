@@ -1,31 +1,12 @@
-import healtyhabits1 from '../public/proyects_images/helty_habits1.png'
-import healtyhabits2 from '../public/proyects_images/healty_habits2.png'
-import healtyhabits3 from '../public/proyects_images/healty_habits3.png'
-
-import Calendarapp1 from '../public/proyects_images/calendar_app1.png'
-import Calendarapp2 from '../public/proyects_images/calendar_app2.png'
-import calendarapp3 from '../public/proyects_images/calendar_app3.png'
-
-import spotifysearch1 from '../public/proyects_images/spotify1.png'
-import spotifysearch2 from '../public/proyects_images/spotify2.png'
-import spotifysearch3 from '../public/proyects_images/spotify3.png'
-
-import journal1 from '../public/proyects_images/journal-app1.png'
-import journal2 from '../public/proyects_images/journal-app2.png'
-import journal3 from '../public/proyects_images/journal-app3.png'
-
-import gifts1 from '../public/proyects_images/gifts1.jpg'
-import gifts2 from '../public/proyects_images/gifts2.png'
-import gifts3 from '../public/proyects_images/gifts3.png'
-
-
-
 
 
  const reactProjects = [ 
   {
       title:"Healty Habits",
-      images:[healtyhabits1,healtyhabits2,healtyhabits3 ],
+      images:["https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744865/helty_habits1_w023hz.png",
+     "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744904/healty_habits2_e91o2i.png",
+     "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744904/healty_habits3_l4vati.png" 
+     ],
       description:"This a community blog about nutrition habits, where you can become a member and upload your articles and posts on specific topics of healthy habits",
       technologies:["HTML5","CSS (Styled Components)","ReactJS","NodeJS","ExpressJS","MongoDB"],
       link:"https://healty-habits.herokuapp.com/",
@@ -34,7 +15,11 @@ import gifts3 from '../public/proyects_images/gifts3.png'
  
  {
      title:"Calendar App",
-     images:[Calendarapp1,Calendarapp2,calendarapp3],
+     images:[
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745167/calendar_app3_wbppcw.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745167/calendar_app2_ol1w4y.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745166/calendar_app1_mbmefx.png"
+    ],
      description:"A Calendar Application in where you can register events in a specific date",
      technologies:["HTML5","CSS","ReactJS","NodeJS( MomentJS )","ExpressJS","MongoDB"],
      link:"https://mearn-calendar-raul.herokuapp.com/ ",
@@ -42,7 +27,11 @@ import gifts3 from '../public/proyects_images/gifts3.png'
  },
  {
     title:"SpotifySearch",
-    images:[spotifysearch1,spotifysearch2,spotifysearch3],
+    images:[
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745072/spotify1_wzudx5.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745071/spotify2_pksnsc.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745072/spotify3_s70rj9.png"
+    ],
     description:"A Simple Web aplication you can manage the spotify api for search for artist and get the album music and singles music by artist ",
     technologies:["HTML5","CSS","ReactJS","NodeJS","ExpressJS"],
     link:"https://spotify-searching.herokuapp.com/  ",
@@ -50,7 +39,10 @@ import gifts3 from '../public/proyects_images/gifts3.png'
   },
   {
       title:"Journal App",
-      images:[journal1,journal2,journal3],
+      images:[ 
+        "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744985/journal-app1_r6dovi.png",
+        "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744986/journal-app3_hiqx5w.png",
+        "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744985/journal-app2_coy8hy.png"],
       description:"In this Journal App you can save notes and any writing you like. I think it would be a good daily for you",
       technologies:["HTML5","CSS","ReactJS","Firebase","Cloudinary"],
       link:"https://react-app-cursos-f534a.web.app/",
@@ -58,8 +50,12 @@ import gifts3 from '../public/proyects_images/gifts3.png'
   },
   {
     title:"Gift App",
-    images:[gifts1,gifts2,gifts3],
-    description:"If you like animated stickers I think this app will be for you, this app use a Giphy API endpoint where you can find any sticker that you want",
+    images:[
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745232/gifts1_bukn0o.jpg",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745235/gifts3_dkbhkh.png",
+      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745235/gifts2_ncj3yj.png"
+    ],
+    description:"If you like animated stickers I think this app will be for you.This app use a Giphy API endpoint where you can find any sticker that you want",
     technologies:["HTML5","SASS","ReactJS"],
     link:"https://giftapp-c3003.firebaseapp.com/",
     github:"https://github.com/Raulito-Moya/react-gifexpertapp"
@@ -112,11 +108,24 @@ const angularProjects = [
 ]
 
 
+const skills = {
+  "HTML5": "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674701/html5_ll0pvh.svg",
+  "CSS":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674731/css3_wzovpp.svg",
+  "JavaScript":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674762/javascript_pjzmse.svg",
+  "GitHub":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674803/github_ypasz9.svg",
+  "Jest":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674829/jest_xhqeax.svg",
+  "React":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674872/react_vrnzcn.svg",
+  "Mongo":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674872/react_vrnzcn.svg",
+  "MySql":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674929/mysql_xewghm.svg",
+  "Next":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674960/next-js_spg5ll.svg",
+  "Angular":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652674992/angularjs_xlwkff.svg",
+  "Node":"https://res.cloudinary.com/dx33ki9ul/image/upload/v1652675025/nodejs_a5ocml.svg"
+}
 
 
 
 export const mockData = {
   reactProjects,
-  angularProjects
-
+  angularProjects,
+  skills
 }

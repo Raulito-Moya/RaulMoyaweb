@@ -67,7 +67,7 @@ export default function Section1(){
       <>
         <section className={styles.hero}>
          <nav className={styles.hero_nav} >
-           <img  src="/Raul_logo2.png"  className={styles.logo} alt="RauL Moya Logo"/>
+           <img  src="https://res.cloudinary.com/dx33ki9ul/image/upload/v1645036554/Raul_logo2_bohi7q.png"  className={styles.logo} alt="RauL Moya Logo"/>
         
              
        <AnimaBox edx={20} ref={boxRef} class1=".lista" objectprops={listProps}>

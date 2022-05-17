@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import { HeadShots } from './HeadShots'
 import { FadeIn } from './Animations/FadeIn';
 import { gsap } from "gsap";
+import { mockData } from './mockData'
 
 export default function Section2(){
   
@@ -52,7 +53,7 @@ export default function Section2(){
    <HeadShots/>
 
   )} 
-      
+    
     <div className={styles.skillscontainer}>
       <h2 className={styles.skillstitle}>Skills</h2>
   
@@ -62,17 +63,17 @@ export default function Section2(){
 
             <>
             <FadeIn vars={{ x:[-8000,2000,-8000,8000], y:[-12000,1000,-4000,4000], rotate:360, scale:5.1    } }  events={{'mouseenter':onEnter, 'mouseleave':onLeave}}>
-            <img  className={styles.skill_icon}  src="/skills/html5.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/css3.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/javascript.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/github.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/react.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/next-js.svg" alt="skill_image"/>
-            <img className={styles.skill_icon} src="/skills/angularjs.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/nodejs.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/jest.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/mongodb.svg" alt="skill_image"/>
-            <img className={styles.skill_icon}  src="/skills/mysql.svg" alt=""/>
+            <img  className={styles.skill_icon}  src={mockData.skills.HTML5} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.CSS} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.JavaScript} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.GitHub} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.React} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.Next} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.Angular} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.Node} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.Jest} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.Mongo} alt="skill_image"/>
+            <img className={styles.skill_icon}  src={mockData.skills.MySql} alt="skill_image"/>
             </FadeIn>
            </>
 

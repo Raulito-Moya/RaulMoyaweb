@@ -1,5 +1,5 @@
 import styles from '../../styles/Carusel.module.css'
-import github from '../../public/github.png'
+
 import { useHorizontalScroll } from '../../hooks/useHorizontalScroll'
 import { useEffect, useRef, useState } from 'react'
 
@@ -57,7 +57,7 @@ export const ProyectCarusel = ({proyect,isModal}) => {
         <div className={styles.linkstoproyect}>
           
          <a  className={styles.linkgit} onClick={handlegit}>
-          <img src="/github.png" alt="" className={styles.logogit}/>
+          <img src="https://res.cloudinary.com/dx33ki9ul/image/upload/v1652747157/github_dsswkl.png" alt="" className={styles.logogit}/>
           
          </a>
          <span style={{color:"black"}}>github code</span>

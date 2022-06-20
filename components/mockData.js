@@ -2,12 +2,12 @@
 
  const reactProjects = [ 
   {
-      title:"Healty Habits",
+      title:"Healthy Habits",
       images:["https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744865/helty_habits1_w023hz.png",
      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744904/healty_habits2_e91o2i.png",
      "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744904/healty_habits3_l4vati.png" 
      ],
-      description:"This a community blog about nutrition habits, where you can become a member and upload your articles and posts on specific topics of healthy habits",
+      description:"If you are a fitness and health lover this is your place. Healthy Habits is a learning platform where you can share and receive content about Healthy Habits and health in general",
       technologies:["HTML5","CSS (Styled Components)","ReactJS","NodeJS","ExpressJS","MongoDB"],
       link:"https://healty-habits.herokuapp.com/",
       github:"https://github.com/Raulito-Moya/Healty-habits"
@@ -32,7 +32,7 @@
       "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745071/spotify2_pksnsc.png",
       "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745072/spotify3_s70rj9.png"
     ],
-    description:"A Simple Web aplication you can manage the spotify api for search for artist and get the album music and singles music by artist ",
+    description:"A Simple Web aplication you can manage the spotify api for search an artist, get the album music and singles music by your favorite artist",
     technologies:["HTML5","CSS","ReactJS","NodeJS","ExpressJS"],
     link:"https://spotify-searching.herokuapp.com/  ",
     github:"https://github.com/Raulito-Moya/ApiSpotify-server"
@@ -43,7 +43,7 @@
         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744985/journal-app1_r6dovi.png",
         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744986/journal-app3_hiqx5w.png",
         "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652744985/journal-app2_coy8hy.png"],
-      description:"In this Journal App you can save notes and any writing you like. I think it would be a good daily for you",
+      description:"In this Journal App you can save your favorites notes. I think it would be a good daily for you",
       technologies:["HTML5","CSS","ReactJS","Firebase","Cloudinary"],
       link:"https://react-app-cursos-f534a.web.app/",
       github:"https://github.com/Raulito-Moya/Journal-Notes-App"
@@ -55,7 +55,7 @@
       "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745235/gifts3_dkbhkh.png",
       "https://res.cloudinary.com/dx33ki9ul/image/upload/v1652745235/gifts2_ncj3yj.png"
     ],
-    description:"If you like animated stickers I think this app will be for you.This app use a Giphy API endpoint where you can find any sticker that you want",
+    description:"If you like animated stickers I think this app will be for you. This app use a Giphy API endpoint where you can find any sticker that you want about any input",
     technologies:["HTML5","SASS","ReactJS"],
     link:"https://giftapp-c3003.firebaseapp.com/",
     github:"https://github.com/Raulito-Moya/react-gifexpertapp"
@@ -99,7 +99,7 @@ const angularProjects = [
       "https://res.cloudinary.com/dx33ki9ul/image/upload/v1642458878/mapsangular3_ye6vqc.png"
       
     ],
-    description:"This app is a map with markers, you can add markers and delete them, you can also edit the marker and change the color of the marker",
+    description:"This app is a map with markers, you can add markers and delete them, you can also edit the marker and change the color of the marker. With this app I hope implemmnt good service with maps.",
     technologies:["Angular","Angular Material","Google Maps API"],
     link:"https://affectionate-hodgkin-848e8b.netlify.app/",
     github:"https://github.com/Raulito-Moya/MarkersMap"
